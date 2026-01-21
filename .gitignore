@@ -1,21 +1,19 @@
-# Jupyter notebooks in-progress
-draft.ipynb
-eda.ipynb
+# Ignore everything
+*
 
-# Specific PDF export to ignore
-Untitled0.ipynb - Colab-1.pdf
+# Allow directories to be traversed (needed to find files deeper)
+!*/
 
-# CSV data files (do not push raw data)
-*.csv
-
-# IPython checkpoints
+# Explicitly exclude the venv and other system/ide folders
+venv/
+__pycache__/
+.DS_Store
+.vscode/
 .ipynb_checkpoints/
 
-# Python cache
-__pycache__/
-
-# VS Code settings
-.vscode/
-
-# MacOS files
-.DS_Store
+# Unignore the specific files we want
+!*.ipynb
+!ProfileReport/
+!ProfileReport/**
+!.gitignore
+!.README.md
